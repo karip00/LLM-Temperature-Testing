@@ -1,0 +1,69 @@
+SWAG COMMONSENSE REASONING EVALUATION REPORT FOR granite-3.3-8b-instruct
+============================================================
+
+CLASSIFICATION PERFORMANCE:
+total_samples: 100
+valid_predictions: 100
+invalid_predictions: 0
+valid_prediction_rate: 1.0
+accuracy: 0.74
+macro_f1: 0.7346775171243256
+weighted_f1: 0.7336586652118566
+f1_a: 0.8148148148148148
+f1_b: 0.6153846153846154
+f1_c: 0.7
+f1_d: 0.8085106382978723
+cohen_kappa: 0.6515212438010991
+
+COMMONSENSE REASONING ANALYSIS:
+true_a_count: 24
+true_b_count: 21
+true_c_count: 33
+true_d_count: 22
+pred_a_count: 30
+pred_b_count: 18
+pred_c_count: 27
+pred_d_count: 25
+a_precision: 0.7333333333333333
+b_precision: 0.6666666666666666
+c_precision: 0.7777777777777778
+d_precision: 0.76
+a_recall: 0.9166666666666666
+b_recall: 0.5714285714285714
+c_recall: 0.6363636363636364
+d_recall: 0.8636363636363636
+a_f1: 0.8148148148148148
+b_f1: 0.6153846153846154
+c_f1: 0.7
+d_f1: 0.8085106382978723
+
+UNCERTAINTY & CONSISTENCY:
+mean_entropy: 0.16684930703645584
+std_entropy: 0.3680335346642923
+mean_confidence: 0.94
+std_confidence: 0.1371130920080209
+mean_js_divergence: 0.22180832447500543
+std_js_divergence: 0.34076000553789465
+low_confidence_samples: 1
+high_uncertainty_samples: 18
+perfect_agreement_samples: 82
+
+DETAILED CLASSIFICATION REPORT:
+              precision    recall  f1-score   support
+
+           A       0.73      0.92      0.81        24
+           B       0.67      0.57      0.62        21
+           C       0.78      0.64      0.70        33
+           D       0.76      0.86      0.81        22
+
+    accuracy                           0.74       100
+   macro avg       0.73      0.75      0.73       100
+weighted avg       0.74      0.74      0.73       100
+
+CONFUSION MATRIX:
+Predicted:
+         A    B    C    D
+True A   22    0    1    1
+    B     4   12    4    1
+    C     2    6   21    4
+    D     2    0    1   19

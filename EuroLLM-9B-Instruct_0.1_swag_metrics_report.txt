@@ -1,0 +1,69 @@
+SWAG COMMONSENSE REASONING EVALUATION REPORT FOR EuroLLM-9B-Instruct
+============================================================
+
+CLASSIFICATION PERFORMANCE:
+total_samples: 100
+valid_predictions: 100
+invalid_predictions: 0
+valid_prediction_rate: 1.0
+accuracy: 0.59
+macro_f1: 0.5895484182280388
+weighted_f1: 0.5913076687694191
+f1_a: 0.6153846153846154
+f1_b: 0.5416666666666666
+f1_c: 0.5964912280701754
+f1_d: 0.6046511627906976
+cohen_kappa: 0.45384307979219385
+
+COMMONSENSE REASONING ANALYSIS:
+true_a_count: 24
+true_b_count: 21
+true_c_count: 33
+true_d_count: 22
+pred_a_count: 28
+pred_b_count: 27
+pred_c_count: 24
+pred_d_count: 21
+a_precision: 0.5714285714285714
+b_precision: 0.48148148148148145
+c_precision: 0.7083333333333334
+d_precision: 0.6190476190476191
+a_recall: 0.6666666666666666
+b_recall: 0.6190476190476191
+c_recall: 0.5151515151515151
+d_recall: 0.5909090909090909
+a_f1: 0.6153846153846154
+b_f1: 0.5416666666666666
+c_f1: 0.5964912280701754
+d_f1: 0.6046511627906976
+
+UNCERTAINTY & CONSISTENCY:
+mean_entropy: 0.1307012391941619
+std_entropy: 0.31469835023851167
+mean_confidence: 0.9520000000000001
+std_confidence: 0.1203993355463393
+mean_js_divergence: 0.3434799317114918
+std_js_divergence: 0.39023243004240854
+low_confidence_samples: 0
+high_uncertainty_samples: 15
+perfect_agreement_samples: 85
+
+DETAILED CLASSIFICATION REPORT:
+              precision    recall  f1-score   support
+
+           A       0.57      0.67      0.62        24
+           B       0.48      0.62      0.54        21
+           C       0.71      0.52      0.60        33
+           D       0.62      0.59      0.60        22
+
+    accuracy                           0.59       100
+   macro avg       0.60      0.60      0.59       100
+weighted avg       0.61      0.59      0.59       100
+
+CONFUSION MATRIX:
+Predicted:
+         A    B    C    D
+True A   16    3    3    2
+    B     2   13    4    2
+    C     5    7   17    4
+    D     5    4    0   13

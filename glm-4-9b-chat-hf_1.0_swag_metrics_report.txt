@@ -1,0 +1,69 @@
+SWAG COMMONSENSE REASONING EVALUATION REPORT FOR glm-4-9b-chat-hf
+============================================================
+
+CLASSIFICATION PERFORMANCE:
+total_samples: 100
+valid_predictions: 100
+invalid_predictions: 0
+valid_prediction_rate: 1.0
+accuracy: 0.76
+macro_f1: 0.7601050837001467
+weighted_f1: 0.76328135420835
+f1_a: 0.7755102040816326
+f1_b: 0.7058823529411765
+f1_c: 0.78125
+f1_d: 0.7777777777777778
+cohen_kappa: 0.677375991396693
+
+COMMONSENSE REASONING ANALYSIS:
+true_a_count: 24
+true_b_count: 21
+true_c_count: 33
+true_d_count: 22
+pred_a_count: 25
+pred_b_count: 30
+pred_c_count: 31
+pred_d_count: 14
+a_precision: 0.76
+b_precision: 0.6
+c_precision: 0.8064516129032258
+d_precision: 1.0
+a_recall: 0.7916666666666666
+b_recall: 0.8571428571428571
+c_recall: 0.7575757575757576
+d_recall: 0.6363636363636364
+a_f1: 0.7755102040816326
+b_f1: 0.7058823529411765
+c_f1: 0.78125
+d_f1: 0.7777777777777778
+
+UNCERTAINTY & CONSISTENCY:
+mean_entropy: 0.38421537600527444
+std_entropy: 0.5359889850726616
+mean_confidence: 0.8719999999999999
+std_confidence: 0.18872201779336717
+mean_js_divergence: 0.22614036074332092
+std_js_divergence: 0.29019140865714577
+low_confidence_samples: 7
+high_uncertainty_samples: 38
+perfect_agreement_samples: 62
+
+DETAILED CLASSIFICATION REPORT:
+              precision    recall  f1-score   support
+
+           A       0.76      0.79      0.78        24
+           B       0.60      0.86      0.71        21
+           C       0.81      0.76      0.78        33
+           D       1.00      0.64      0.78        22
+
+    accuracy                           0.76       100
+   macro avg       0.79      0.76      0.76       100
+weighted avg       0.79      0.76      0.76       100
+
+CONFUSION MATRIX:
+Predicted:
+         A    B    C    D
+True A   19    1    4    0
+    B     1   18    2    0
+    C     1    7   25    0
+    D     4    4    0   14

@@ -1,0 +1,69 @@
+SWAG COMMONSENSE REASONING EVALUATION REPORT FOR Qwen2.5-7B-Instruct
+============================================================
+
+CLASSIFICATION PERFORMANCE:
+total_samples: 100
+valid_predictions: 100
+invalid_predictions: 0
+valid_prediction_rate: 1.0
+accuracy: 0.71
+macro_f1: 0.7051895557476376
+weighted_f1: 0.7078031576617769
+f1_a: 0.7636363636363637
+f1_b: 0.6341463414634146
+f1_c: 0.711864406779661
+f1_d: 0.7111111111111111
+cohen_kappa: 0.6118843683083512
+
+COMMONSENSE REASONING ANALYSIS:
+true_a_count: 24
+true_b_count: 21
+true_c_count: 33
+true_d_count: 22
+pred_a_count: 31
+pred_b_count: 20
+pred_c_count: 26
+pred_d_count: 23
+a_precision: 0.6774193548387096
+b_precision: 0.65
+c_precision: 0.8076923076923077
+d_precision: 0.6956521739130435
+a_recall: 0.875
+b_recall: 0.6190476190476191
+c_recall: 0.6363636363636364
+d_recall: 0.7272727272727273
+a_f1: 0.7636363636363637
+b_f1: 0.6341463414634146
+c_f1: 0.711864406779661
+d_f1: 0.7111111111111111
+
+UNCERTAINTY & CONSISTENCY:
+mean_entropy: 0.08464393446710154
+std_entropy: 0.25696627387831966
+mean_confidence: 0.97
+std_confidence: 0.09539392014169458
+mean_js_divergence: 0.24518901114044617
+std_js_divergence: 0.36316399802965504
+low_confidence_samples: 0
+high_uncertainty_samples: 10
+perfect_agreement_samples: 90
+
+DETAILED CLASSIFICATION REPORT:
+              precision    recall  f1-score   support
+
+           A       0.68      0.88      0.76        24
+           B       0.65      0.62      0.63        21
+           C       0.81      0.64      0.71        33
+           D       0.70      0.73      0.71        22
+
+    accuracy                           0.71       100
+   macro avg       0.71      0.71      0.71       100
+weighted avg       0.72      0.71      0.71       100
+
+CONFUSION MATRIX:
+Predicted:
+         A    B    C    D
+True A   21    1    2    0
+    B     2   13    2    4
+    C     4    5   21    3
+    D     4    1    1   16

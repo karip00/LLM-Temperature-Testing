@@ -1,0 +1,69 @@
+SWAG COMMONSENSE REASONING EVALUATION REPORT FOR Mengzi3-8B-Chat
+============================================================
+
+CLASSIFICATION PERFORMANCE:
+total_samples: 100
+valid_predictions: 100
+invalid_predictions: 0
+valid_prediction_rate: 1.0
+accuracy: 0.51
+macro_f1: 0.5096248691368783
+weighted_f1: 0.5112282676445848
+f1_a: 0.6190476190476191
+f1_b: 0.37209302325581395
+f1_c: 0.4918032786885246
+f1_d: 0.5555555555555556
+cohen_kappa: 0.34474458411339937
+
+COMMONSENSE REASONING ANALYSIS:
+true_a_count: 24
+true_b_count: 21
+true_c_count: 33
+true_d_count: 22
+pred_a_count: 18
+pred_b_count: 22
+pred_c_count: 28
+pred_d_count: 32
+a_precision: 0.7222222222222222
+b_precision: 0.36363636363636365
+c_precision: 0.5357142857142857
+d_precision: 0.46875
+a_recall: 0.5416666666666666
+b_recall: 0.38095238095238093
+c_recall: 0.45454545454545453
+d_recall: 0.6818181818181818
+a_f1: 0.6190476190476191
+b_f1: 0.37209302325581395
+c_f1: 0.4918032786885246
+d_f1: 0.5555555555555556
+
+UNCERTAINTY & CONSISTENCY:
+mean_entropy: 0.1964554867851509
+std_entropy: 0.3703624855934432
+mean_confidence: 0.932
+std_confidence: 0.13629380029920654
+mean_js_divergence: 0.4031937643881818
+std_js_divergence: 0.38544148470262773
+low_confidence_samples: 1
+high_uncertainty_samples: 23
+perfect_agreement_samples: 77
+
+DETAILED CLASSIFICATION REPORT:
+              precision    recall  f1-score   support
+
+           A       0.72      0.54      0.62        24
+           B       0.36      0.38      0.37        21
+           C       0.54      0.45      0.49        33
+           D       0.47      0.68      0.56        22
+
+    accuracy                           0.51       100
+   macro avg       0.52      0.51      0.51       100
+weighted avg       0.53      0.51      0.51       100
+
+CONFUSION MATRIX:
+Predicted:
+         A    B    C    D
+True A   13    2    4    5
+    B     1    8    6    6
+    C     2   10   15    6
+    D     2    2    3   15

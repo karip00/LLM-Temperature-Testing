@@ -1,0 +1,69 @@
+SWAG COMMONSENSE REASONING EVALUATION REPORT FOR SOLAR-10.7B-Instruct-v1.0
+============================================================
+
+CLASSIFICATION PERFORMANCE:
+total_samples: 100
+valid_predictions: 98
+invalid_predictions: 2
+valid_prediction_rate: 0.98
+accuracy: 0.6938775510204082
+macro_f1: 0.6949668012168012
+weighted_f1: 0.6909603680011844
+f1_a: 0.7142857142857143
+f1_b: 0.7027027027027027
+f1_c: 0.6545454545454545
+f1_d: 0.7083333333333334
+cohen_kappa: 0.5917233717539231
+
+COMMONSENSE REASONING ANALYSIS:
+true_a_count: 23
+true_b_count: 21
+true_c_count: 32
+true_d_count: 22
+pred_a_count: 33
+pred_b_count: 16
+pred_c_count: 23
+pred_d_count: 26
+a_precision: 0.6060606060606061
+b_precision: 0.8125
+c_precision: 0.782608695652174
+d_precision: 0.6538461538461539
+a_recall: 0.8695652173913043
+b_recall: 0.6190476190476191
+c_recall: 0.5625
+d_recall: 0.7727272727272727
+a_f1: 0.7142857142857143
+b_f1: 0.7027027027027027
+c_f1: 0.6545454545454545
+d_f1: 0.7083333333333334
+
+UNCERTAINTY & CONSISTENCY:
+mean_entropy: 0.022099839639409053
+std_entropy: 0.12436274448606861
+mean_confidence: 0.9938775510204081
+std_confidence: 0.03445294493088598
+mean_js_divergence: 0.25300329072900524
+std_js_divergence: 0.38133805118704983
+low_confidence_samples: 0
+high_uncertainty_samples: 3
+perfect_agreement_samples: 95
+
+DETAILED CLASSIFICATION REPORT:
+              precision    recall  f1-score   support
+
+           A       0.61      0.87      0.71        23
+           B       0.81      0.62      0.70        21
+           C       0.78      0.56      0.65        32
+           D       0.65      0.77      0.71        22
+
+    accuracy                           0.69        98
+   macro avg       0.71      0.71      0.69        98
+weighted avg       0.72      0.69      0.69        98
+
+CONFUSION MATRIX:
+Predicted:
+         A    B    C    D
+True A   20    0    1    2
+    B     2   13    3    3
+    C     7    3   18    4
+    D     4    0    1   17

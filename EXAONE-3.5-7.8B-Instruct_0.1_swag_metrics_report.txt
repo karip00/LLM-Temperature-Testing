@@ -1,0 +1,69 @@
+SWAG COMMONSENSE REASONING EVALUATION REPORT FOR EXAONE-3.5-7.8B-Instruct
+============================================================
+
+CLASSIFICATION PERFORMANCE:
+total_samples: 100
+valid_predictions: 100
+invalid_predictions: 0
+valid_prediction_rate: 1.0
+accuracy: 0.75
+macro_f1: 0.7476281780654845
+weighted_f1: 0.7518402289145323
+f1_a: 0.7916666666666666
+f1_b: 0.6818181818181818
+f1_c: 0.7719298245614035
+f1_d: 0.7450980392156863
+cohen_kappa: 0.6671548395686326
+
+COMMONSENSE REASONING ANALYSIS:
+true_a_count: 24
+true_b_count: 21
+true_c_count: 33
+true_d_count: 22
+pred_a_count: 24
+pred_b_count: 23
+pred_c_count: 24
+pred_d_count: 29
+a_precision: 0.7916666666666666
+b_precision: 0.6521739130434783
+c_precision: 0.9166666666666666
+d_precision: 0.6551724137931034
+a_recall: 0.7916666666666666
+b_recall: 0.7142857142857143
+c_recall: 0.6666666666666666
+d_recall: 0.8636363636363636
+a_f1: 0.7916666666666666
+b_f1: 0.6818181818181818
+c_f1: 0.7719298245614035
+d_f1: 0.7450980392156863
+
+UNCERTAINTY & CONSISTENCY:
+mean_entropy: 0.04107685473571425
+std_entropy: 0.18111598043267582
+mean_confidence: 0.9860000000000001
+std_confidence: 0.06483826030978931
+mean_js_divergence: 0.20014024994729168
+std_js_divergence: 0.3495018369016542
+low_confidence_samples: 0
+high_uncertainty_samples: 5
+perfect_agreement_samples: 95
+
+DETAILED CLASSIFICATION REPORT:
+              precision    recall  f1-score   support
+
+           A       0.79      0.79      0.79        24
+           B       0.65      0.71      0.68        21
+           C       0.92      0.67      0.77        33
+           D       0.66      0.86      0.75        22
+
+    accuracy                           0.75       100
+   macro avg       0.75      0.76      0.75       100
+weighted avg       0.77      0.75      0.75       100
+
+CONFUSION MATRIX:
+Predicted:
+         A    B    C    D
+True A   19    1    1    3
+    B     2   15    1    3
+    C     2    5   22    4
+    D     1    2    0   19

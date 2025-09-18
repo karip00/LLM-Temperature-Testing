@@ -1,0 +1,69 @@
+SWAG COMMONSENSE REASONING EVALUATION REPORT FOR Mistral-7B-Instruct-v0.3
+============================================================
+
+CLASSIFICATION PERFORMANCE:
+total_samples: 100
+valid_predictions: 99
+invalid_predictions: 1
+valid_prediction_rate: 0.99
+accuracy: 0.5858585858585859
+macro_f1: 0.5832034632034632
+weighted_f1: 0.5635497835497835
+f1_a: 0.6133333333333333
+f1_b: 0.6285714285714286
+f1_c: 0.4090909090909091
+f1_d: 0.6818181818181818
+cohen_kappa: 0.4537012113055182
+
+COMMONSENSE REASONING ANALYSIS:
+true_a_count: 24
+true_b_count: 20
+true_c_count: 33
+true_d_count: 22
+pred_a_count: 51
+pred_b_count: 15
+pred_c_count: 11
+pred_d_count: 22
+a_precision: 0.45098039215686275
+b_precision: 0.7333333333333333
+c_precision: 0.8181818181818182
+d_precision: 0.6818181818181818
+a_recall: 0.9583333333333334
+b_recall: 0.55
+c_recall: 0.2727272727272727
+d_recall: 0.6818181818181818
+a_f1: 0.6133333333333333
+b_f1: 0.6285714285714286
+c_f1: 0.4090909090909091
+d_f1: 0.6818181818181818
+
+UNCERTAINTY & CONSISTENCY:
+mean_entropy: 0.2112975179175267
+std_entropy: 0.389910578700652
+mean_confidence: 0.9272727272727272
+std_confidence: 0.14342011595393012
+mean_js_divergence: 0.36141424177786907
+std_js_divergence: 0.3809605777595616
+low_confidence_samples: 2
+high_uncertainty_samples: 24
+perfect_agreement_samples: 75
+
+DETAILED CLASSIFICATION REPORT:
+              precision    recall  f1-score   support
+
+           A       0.45      0.96      0.61        24
+           B       0.73      0.55      0.63        20
+           C       0.82      0.27      0.41        33
+           D       0.68      0.68      0.68        22
+
+    accuracy                           0.59        99
+   macro avg       0.67      0.62      0.58        99
+weighted avg       0.68      0.59      0.56        99
+
+CONFUSION MATRIX:
+Predicted:
+         A    B    C    D
+True A   23    0    0    1
+    B     5   11    2    2
+    C    16    4    9    4
+    D     7    0    0   15

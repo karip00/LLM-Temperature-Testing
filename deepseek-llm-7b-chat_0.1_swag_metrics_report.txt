@@ -1,0 +1,69 @@
+SWAG COMMONSENSE REASONING EVALUATION REPORT FOR deepseek-llm-7b-chat
+============================================================
+
+CLASSIFICATION PERFORMANCE:
+total_samples: 100
+valid_predictions: 100
+invalid_predictions: 0
+valid_prediction_rate: 1.0
+accuracy: 0.73
+macro_f1: 0.7227457127051446
+weighted_f1: 0.7268514352449444
+f1_a: 0.8727272727272727
+f1_b: 0.6274509803921569
+f1_c: 0.7241379310344828
+f1_d: 0.6666666666666666
+cohen_kappa: 0.6396636861070333
+
+COMMONSENSE REASONING ANALYSIS:
+true_a_count: 24
+true_b_count: 21
+true_c_count: 33
+true_d_count: 22
+pred_a_count: 31
+pred_b_count: 30
+pred_c_count: 25
+pred_d_count: 14
+a_precision: 0.7741935483870968
+b_precision: 0.5333333333333333
+c_precision: 0.84
+d_precision: 0.8571428571428571
+a_recall: 1.0
+b_recall: 0.7619047619047619
+c_recall: 0.6363636363636364
+d_recall: 0.5454545454545454
+a_f1: 0.8727272727272727
+b_f1: 0.6274509803921569
+c_f1: 0.7241379310344828
+d_f1: 0.6666666666666666
+
+UNCERTAINTY & CONSISTENCY:
+mean_entropy: 0.019419011889093375
+std_entropy: 0.13593308322365363
+mean_confidence: 0.992
+std_confidence: 0.056000000000000015
+mean_js_divergence: 0.22883815939395732
+std_js_divergence: 0.36935322044989205
+low_confidence_samples: 0
+high_uncertainty_samples: 2
+perfect_agreement_samples: 98
+
+DETAILED CLASSIFICATION REPORT:
+              precision    recall  f1-score   support
+
+           A       0.77      1.00      0.87        24
+           B       0.53      0.76      0.63        21
+           C       0.84      0.64      0.72        33
+           D       0.86      0.55      0.67        22
+
+    accuracy                           0.73       100
+   macro avg       0.75      0.74      0.72       100
+weighted avg       0.76      0.73      0.73       100
+
+CONFUSION MATRIX:
+Predicted:
+         A    B    C    D
+True A   24    0    0    0
+    B     0   16    3    2
+    C     4    8   21    0
+    D     3    6    1   12

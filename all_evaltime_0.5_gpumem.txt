@@ -1,0 +1,90 @@
+Model: Llama-3.1-8B-Instruct
+  - Total evaluation time: 43.23 seconds
+  - VRAM allocated by model: 15316.51 MB
+  - VRAM reserved by model: 15320.00 MB
+  - Date/Time: 2025-09-18 17:40:28
+--------------------------------------------------
+Model: Mistral-7B-Instruct-v0.3
+  - Total evaluation time: 46.27 seconds
+  - VRAM allocated by model: 13824.51 MB
+  - VRAM reserved by model: 13836.00 MB
+  - Date/Time: 2025-09-18 17:41:28
+--------------------------------------------------
+Model: Ministral-8B-Instruct-2410
+  - Total evaluation time: 45.82 seconds
+  - VRAM allocated by model: 15296.57 MB
+  - VRAM reserved by model: 15308.00 MB
+  - Date/Time: 2025-09-18 17:42:30
+--------------------------------------------------
+Model: granite-3.3-8b-instruct
+  - Total evaluation time: 55.76 seconds
+  - VRAM allocated by model: 15584.69 MB
+  - VRAM reserved by model: 15596.00 MB
+  - Date/Time: 2025-09-18 17:43:42
+--------------------------------------------------
+Model: EXAONE-3.5-7.8B-Instruct
+  - Total evaluation time: 39.26 seconds
+  - VRAM allocated by model: 14912.52 MB
+  - VRAM reserved by model: 15016.00 MB
+  - Date/Time: 2025-09-18 17:44:47
+--------------------------------------------------
+Model: Falcon3-10B-Instruct
+  - Total evaluation time: 55.22 seconds
+  - VRAM allocated by model: 19657.48 MB
+  - VRAM reserved by model: 19784.00 MB
+  - Date/Time: 2025-09-18 17:46:00
+--------------------------------------------------
+Model: SOLAR-10.7B-Instruct-v1.0
+  - Total evaluation time: 68.44 seconds
+  - VRAM allocated by model: 20468.76 MB
+  - VRAM reserved by model: 20466.00 MB
+  - Date/Time: 2025-09-18 17:47:29
+--------------------------------------------------
+Model: deepseek-llm-7b-chat
+  - Total evaluation time: 36.51 seconds
+  - VRAM allocated by model: 13180.48 MB
+  - VRAM reserved by model: 13258.00 MB
+  - Date/Time: 2025-09-18 17:48:19
+--------------------------------------------------
+Model: neural-chat-7b-v3-3
+  - Total evaluation time: 47.06 seconds
+  - VRAM allocated by model: 13812.51 MB
+  - VRAM reserved by model: 13810.00 MB
+  - Date/Time: 2025-09-18 17:49:20
+--------------------------------------------------
+Model: LLaDA-8B-Instruct
+  - Total evaluation time: 56.06 seconds
+  - VRAM allocated by model: 15288.51 MB
+  - VRAM reserved by model: 15376.00 MB
+  - Date/Time: 2025-09-18 17:50:33
+--------------------------------------------------
+Model: Qwen2.5-7B-Instruct
+  - Total evaluation time: 38.43 seconds
+  - VRAM allocated by model: 14530.14 MB
+  - VRAM reserved by model: 14538.00 MB
+  - Date/Time: 2025-09-18 17:51:25
+--------------------------------------------------
+Model: kanana-1.5-8b-instruct-2505
+  - Total evaluation time: 43.04 seconds
+  - VRAM allocated by model: 15316.56 MB
+  - VRAM reserved by model: 15318.00 MB
+  - Date/Time: 2025-09-18 17:52:23
+--------------------------------------------------
+Model: EuroLLM-9B-Instruct
+  - Total evaluation time: 56.47 seconds
+  - VRAM allocated by model: 17456.66 MB
+  - VRAM reserved by model: 17468.00 MB
+  - Date/Time: 2025-09-18 17:53:37
+--------------------------------------------------
+Model: Mengzi3-8B-Chat
+  - Total evaluation time: 43.54 seconds
+  - VRAM allocated by model: 15316.51 MB
+  - VRAM reserved by model: 15420.00 MB
+  - Date/Time: 2025-09-18 17:54:37
+--------------------------------------------------
+Model: glm-4-9b-chat-hf
+  - Total evaluation time: 53.92 seconds
+  - VRAM allocated by model: 17931.98 MB
+  - VRAM reserved by model: 17926.00 MB
+  - Date/Time: 2025-09-18 17:55:48
+--------------------------------------------------

@@ -1,0 +1,69 @@
+SWAG COMMONSENSE REASONING EVALUATION REPORT FOR Falcon3-10B-Instruct
+============================================================
+
+CLASSIFICATION PERFORMANCE:
+total_samples: 100
+valid_predictions: 67
+invalid_predictions: 33
+valid_prediction_rate: 0.67
+accuracy: 0.6716417910447762
+macro_f1: 0.6483753266144084
+weighted_f1: 0.6694710100115325
+f1_a: 0.5833333333333334
+f1_b: 0.56
+f1_c: 0.7659574468085106
+f1_d: 0.6842105263157895
+cohen_kappa: 0.5508836075563681
+
+COMMONSENSE REASONING ANALYSIS:
+true_a_count: 12
+true_b_count: 14
+true_c_count: 24
+true_d_count: 17
+pred_a_count: 12
+pred_b_count: 11
+pred_c_count: 23
+pred_d_count: 21
+a_precision: 0.5833333333333334
+b_precision: 0.6363636363636364
+c_precision: 0.782608695652174
+d_precision: 0.6190476190476191
+a_recall: 0.5833333333333334
+b_recall: 0.5
+c_recall: 0.75
+d_recall: 0.7647058823529411
+a_f1: 0.5833333333333334
+b_f1: 0.56
+c_f1: 0.7659574468085106
+d_f1: 0.6842105263157895
+
+UNCERTAINTY & CONSISTENCY:
+mean_entropy: 0.2136998524018163
+std_entropy: 0.38055813926197807
+mean_confidence: 0.9283582089552238
+std_confidence: 0.13692352168572794
+mean_js_divergence: 0.28167212428435867
+std_js_divergence: 0.38544061098251264
+low_confidence_samples: 1
+high_uncertainty_samples: 17
+perfect_agreement_samples: 50
+
+DETAILED CLASSIFICATION REPORT:
+              precision    recall  f1-score   support
+
+           A       0.58      0.58      0.58        12
+           B       0.64      0.50      0.56        14
+           C       0.78      0.75      0.77        24
+           D       0.62      0.76      0.68        17
+
+    accuracy                           0.67        67
+   macro avg       0.66      0.65      0.65        67
+weighted avg       0.67      0.67      0.67        67
+
+CONFUSION MATRIX:
+Predicted:
+         A    B    C    D
+True A    7    0    2    3
+    B     1    7    3    3
+    C     2    2   18    2
+    D     2    2    0   13

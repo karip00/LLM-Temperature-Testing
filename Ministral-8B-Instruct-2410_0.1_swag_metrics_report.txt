@@ -1,0 +1,69 @@
+SWAG COMMONSENSE REASONING EVALUATION REPORT FOR Ministral-8B-Instruct-2410
+============================================================
+
+CLASSIFICATION PERFORMANCE:
+total_samples: 100
+valid_predictions: 100
+invalid_predictions: 0
+valid_prediction_rate: 1.0
+accuracy: 0.81
+macro_f1: 0.810998594428827
+weighted_f1: 0.8051948632762586
+f1_a: 0.8461538461538461
+f1_b: 0.7906976744186046
+f1_c: 0.75
+f1_d: 0.8571428571428571
+cohen_kappa: 0.747105017968854
+
+COMMONSENSE REASONING ANALYSIS:
+true_a_count: 24
+true_b_count: 21
+true_c_count: 33
+true_d_count: 22
+pred_a_count: 28
+pred_b_count: 22
+pred_c_count: 23
+pred_d_count: 27
+a_precision: 0.7857142857142857
+b_precision: 0.7727272727272727
+c_precision: 0.9130434782608695
+d_precision: 0.7777777777777778
+a_recall: 0.9166666666666666
+b_recall: 0.8095238095238095
+c_recall: 0.6363636363636364
+d_recall: 0.9545454545454546
+a_f1: 0.8461538461538461
+b_f1: 0.7906976744186046
+c_f1: 0.75
+d_f1: 0.8571428571428571
+
+UNCERTAINTY & CONSISTENCY:
+mean_entropy: 0.06449586662480762
+std_entropy: 0.24197746887769997
+mean_confidence: 0.978
+std_confidence: 0.08435638683585259
+mean_js_divergence: 0.15692434346654272
+std_js_divergence: 0.31460408188696276
+low_confidence_samples: 0
+high_uncertainty_samples: 7
+perfect_agreement_samples: 93
+
+DETAILED CLASSIFICATION REPORT:
+              precision    recall  f1-score   support
+
+           A       0.79      0.92      0.85        24
+           B       0.77      0.81      0.79        21
+           C       0.91      0.64      0.75        33
+           D       0.78      0.95      0.86        22
+
+    accuracy                           0.81       100
+   macro avg       0.81      0.83      0.81       100
+weighted avg       0.82      0.81      0.81       100
+
+CONFUSION MATRIX:
+Predicted:
+         A    B    C    D
+True A   22    0    1    1
+    B     1   17    1    2
+    C     4    5   21    3
+    D     1    0    0   21

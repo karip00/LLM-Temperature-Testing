@@ -1,0 +1,69 @@
+SWAG COMMONSENSE REASONING EVALUATION REPORT FOR kanana-1.5-8b-instruct-2505
+============================================================
+
+CLASSIFICATION PERFORMANCE:
+total_samples: 100
+valid_predictions: 100
+invalid_predictions: 0
+valid_prediction_rate: 1.0
+accuracy: 0.63
+macro_f1: 0.6301293244570556
+weighted_f1: 0.6319256793626542
+f1_a: 0.6530612244897959
+f1_b: 0.6363636363636364
+f1_c: 0.6428571428571429
+f1_d: 0.5882352941176471
+cohen_kappa: 0.5079787234042552
+
+COMMONSENSE REASONING ANALYSIS:
+true_a_count: 24
+true_b_count: 21
+true_c_count: 33
+true_d_count: 22
+pred_a_count: 25
+pred_b_count: 23
+pred_c_count: 23
+pred_d_count: 29
+a_precision: 0.64
+b_precision: 0.6086956521739131
+c_precision: 0.782608695652174
+d_precision: 0.5172413793103449
+a_recall: 0.6666666666666666
+b_recall: 0.6666666666666666
+c_recall: 0.5454545454545454
+d_recall: 0.6818181818181818
+a_f1: 0.6530612244897959
+b_f1: 0.6363636363636364
+c_f1: 0.6428571428571429
+d_f1: 0.5882352941176471
+
+UNCERTAINTY & CONSISTENCY:
+mean_entropy: 0.3022613974740657
+std_entropy: 0.515829339285047
+mean_confidence: 0.9019999999999999
+std_confidence: 0.17319353336657808
+mean_js_divergence: 0.3332247369604342
+std_js_divergence: 0.3652249630325499
+low_confidence_samples: 5
+high_uncertainty_samples: 29
+perfect_agreement_samples: 71
+
+DETAILED CLASSIFICATION REPORT:
+              precision    recall  f1-score   support
+
+           A       0.64      0.67      0.65        24
+           B       0.61      0.67      0.64        21
+           C       0.78      0.55      0.64        33
+           D       0.52      0.68      0.59        22
+
+    accuracy                           0.63       100
+   macro avg       0.64      0.64      0.63       100
+weighted avg       0.65      0.63      0.63       100
+
+CONFUSION MATRIX:
+Predicted:
+         A    B    C    D
+True A   16    1    1    6
+    B     2   14    3    2
+    C     3    6   18    6
+    D     4    2    1   15

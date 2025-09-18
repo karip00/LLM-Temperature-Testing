@@ -1,0 +1,69 @@
+SWAG COMMONSENSE REASONING EVALUATION REPORT FOR neural-chat-7b-v3-3
+============================================================
+
+CLASSIFICATION PERFORMANCE:
+total_samples: 100
+valid_predictions: 100
+invalid_predictions: 0
+valid_prediction_rate: 1.0
+accuracy: 0.67
+macro_f1: 0.6659781941031941
+weighted_f1: 0.665864864864865
+f1_a: 0.6875
+f1_b: 0.5945945945945946
+f1_c: 0.6545454545454545
+f1_d: 0.7272727272727273
+cohen_kappa: 0.5596477181745396
+
+COMMONSENSE REASONING ANALYSIS:
+true_a_count: 24
+true_b_count: 21
+true_c_count: 33
+true_d_count: 22
+pred_a_count: 40
+pred_b_count: 16
+pred_c_count: 22
+pred_d_count: 22
+a_precision: 0.55
+b_precision: 0.6875
+c_precision: 0.8181818181818182
+d_precision: 0.7272727272727273
+a_recall: 0.9166666666666666
+b_recall: 0.5238095238095238
+c_recall: 0.5454545454545454
+d_recall: 0.7272727272727273
+a_f1: 0.6875
+b_f1: 0.5945945945945946
+c_f1: 0.6545454545454545
+d_f1: 0.7272727272727273
+
+UNCERTAINTY & CONSISTENCY:
+mean_entropy: 0.09239254042895599
+std_entropy: 0.27418166387563503
+mean_confidence: 0.97
+std_confidence: 0.09539392014169458
+mean_js_divergence: 0.28359990948581776
+std_js_divergence: 0.37929925560987854
+low_confidence_samples: 1
+high_uncertainty_samples: 11
+perfect_agreement_samples: 89
+
+DETAILED CLASSIFICATION REPORT:
+              precision    recall  f1-score   support
+
+           A       0.55      0.92      0.69        24
+           B       0.69      0.52      0.59        21
+           C       0.82      0.55      0.65        33
+           D       0.73      0.73      0.73        22
+
+    accuracy                           0.67       100
+   macro avg       0.70      0.68      0.67       100
+weighted avg       0.71      0.67      0.67       100
+
+CONFUSION MATRIX:
+Predicted:
+         A    B    C    D
+True A   22    0    1    1
+    B     4   11    3    3
+    C     9    4   18    2
+    D     5    1    0   16

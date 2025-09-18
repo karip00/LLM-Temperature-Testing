@@ -1,0 +1,69 @@
+SWAG COMMONSENSE REASONING EVALUATION REPORT FOR LLaDA-8B-Instruct
+============================================================
+
+CLASSIFICATION PERFORMANCE:
+total_samples: 100
+valid_predictions: 67
+invalid_predictions: 33
+valid_prediction_rate: 0.67
+accuracy: 0.582089552238806
+macro_f1: 0.5753315580618212
+weighted_f1: 0.565865066896096
+f1_a: 0.7368421052631579
+f1_b: 0.5555555555555556
+f1_c: 0.4375
+f1_d: 0.5714285714285714
+cohen_kappa: 0.4527421236872812
+
+COMMONSENSE REASONING ANALYSIS:
+true_a_count: 18
+true_b_count: 17
+true_c_count: 23
+true_d_count: 9
+pred_a_count: 20
+pred_b_count: 19
+pred_c_count: 9
+pred_d_count: 19
+a_precision: 0.7
+b_precision: 0.5263157894736842
+c_precision: 0.7777777777777778
+d_precision: 0.42105263157894735
+a_recall: 0.7777777777777778
+b_recall: 0.5882352941176471
+c_recall: 0.30434782608695654
+d_recall: 0.8888888888888888
+a_f1: 0.7368421052631579
+b_f1: 0.5555555555555556
+c_f1: 0.4375
+d_f1: 0.5714285714285714
+
+UNCERTAINTY & CONSISTENCY:
+mean_entropy: 0.99220028206907
+std_entropy: 0.5810340469061895
+mean_confidence: 0.6537313432835822
+std_confidence: 0.21183516416967368
+mean_js_divergence: 0.33315061640360455
+std_js_divergence: 0.33644027650469166
+low_confidence_samples: 17
+high_uncertainty_samples: 57
+perfect_agreement_samples: 10
+
+DETAILED CLASSIFICATION REPORT:
+              precision    recall  f1-score   support
+
+           A       0.70      0.78      0.74        18
+           B       0.53      0.59      0.56        17
+           C       0.78      0.30      0.44        23
+           D       0.42      0.89      0.57         9
+
+    accuracy                           0.58        67
+   macro avg       0.61      0.64      0.58        67
+weighted avg       0.65      0.58      0.57        67
+
+CONFUSION MATRIX:
+Predicted:
+         A    B    C    D
+True A   14    1    0    3
+    B     2   10    2    3
+    C     4    7    7    5
+    D     0    1    0    8
